@@ -100,6 +100,9 @@ body {
 .text-secondary {
   color: #64748b !important;
 }
+.text-accent-red {
+  color: var(--accent-red) !important;
+}
 .text-accent-blue {
   color: var(--accent-blue) ;
 }
@@ -233,4 +236,9 @@ body {
 .expertise-label {
   font-family: var(--bs-font-monospace);
   opacity: 0.75;
+}
+
+/* EDUCATION */
+.file-item:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
