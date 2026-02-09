@@ -125,7 +125,8 @@
                 communication
               </h4>
               <div id="send-messages"
-                class="item-link d-flex text-custom-sm align-items-center gap-2 px-2 py-2 rounded text-light">
+                class="item-link d-flex text-custom-sm align-items-center gap-2 px-2 py-2 rounded text-light"
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <span class="text-accent-blue text-md-icon">
                   <i class="fa-solid fa-envelope"></i>
                 </span>
@@ -571,6 +572,119 @@
   </div>
   <!-- TRASKBAR -->
   <div></div>
+  <!-- MODAL -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-card-dark border border-os rounded shadow-lg overflow-hidden">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-os-header border-bottom border-os flex-shrink-0 py-2">
+          <div class="d-flex gap-2">
+            <div class="rounded-circle circle-size bg-accent-red" style="width: 0.75rem; height: 0.75rem"></div>
+            <div class="rounded-circle circle-size bg-primary" style="width: 0.75rem; height: 0.75rem"></div>
+            <div class="rounded-circle circle-size bg-accent-green" style="width: 0.75rem; height: 0.75rem"></div>
+          </div>
+          <div class="position-absolute start-50 translate-middle-x font-mono text-muted text-uppercase"
+            style="font-size: 0.6875rem; letter-spacing: 0.05em;">
+            contact_form.exe
+          </div>
+          <button type="button" class="btn-close btn-close-white text-item" data-bs-dismiss="modal" aria-label="Close"
+            ></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body p-4 font-mono overflow-auto text-item-lg form-max">
+
+          <!-- Terminal Header Info -->
+          <div class="d-flex flex-column gap-1 mb-4">
+            <div class="text-muted text-item-md">
+              Last login: Fri May 24 14:32:01 on ttys001
+            </div>
+            <div class="text-accent-green fw-bold text-item-md" >
+              Initializing communication protocol...
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contactForm" class="d-flex flex-column gap-4">
+
+            <!-- Name Input -->
+            <div class="d-flex flex-column gap-1">
+              <label class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
+                <span class="text-accent-green">guest@system</span>:<span class="text-accent-blue">~</span>$
+                <span class="text-white">./set_name</span>
+              </label>
+              <div class="d-flex align-items-center gap-2">
+                <span class="text-primary flex-shrink-0">&gt;</span>
+                <input type="text" class="terminal-input flex-fill" placeholder="Enter your identifier..."
+                  autocomplete="off" required>
+              </div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="d-flex flex-column gap-1">
+              <label class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
+                <span class="text-accent-green">guest@system</span>:<span class="text-accent-blue">~</span>$
+                <span class="text-white">./set_email</span>
+              </label>
+              <div class="d-flex align-items-center gap-2">
+                <span class="text-primary flex-shrink-0">&gt;</span>
+                <input type="email" class="terminal-input flex-fill" placeholder="user@domain.root" autocomplete="off"
+                  required>
+              </div>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="d-flex flex-column gap-1">
+              <label class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
+                <span class="text-accent-green">guest@system</span>:<span class="text-accent-blue">~</span>$
+                <span class="text-white">./write_message</span>
+              </label>
+              <div class="bg-black bg-opacity-25 border border-os rounded p-3 mt-2">
+                <textarea class="terminal-input w-100 font-mono text-item-md" placeholder="System message..." rows="5"></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button and Status -->
+            <div class="pt-3 d-flex flex-column gap-3">
+              <div class="d-flex gap-3">
+                <button type="button"
+                  class="btn cancel-btn flex-fill border border-danger text-danger fw-bold py-3 text-uppercase "
+                  data-bs-dismiss="modal" >
+                  [ CANCEL ]
+                </button>
+                <button type="submit"
+                  class="btn submit-btn flex-fill  border border-primary text-primary fw-bold py-3 text-uppercase ">
+                  [ SEND_TRANSMISSION ]
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center text-uppercase text-secondary"
+                style="font-size: 0.625rem;">
+                <span>Status: Awaiting_input</span>
+                <span>Enc: UTF-8</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal Footer (Terminal Status Bar) -->
+        <div
+          class="modal-footer bg-black bg-opacity-25 border-top border-os d-flex justify-content-between align-items-center text-uppercase text-muted py-2 px-4"
+          style="font-size: 0.5625rem; letter-spacing: 0.1em;">
+          <div class="d-flex gap-3">
+            <span class="d-flex align-items-center gap-1">
+              <span class="status-dot bg-accent-green"></span> Secure_Port_80
+            </span>
+            <span>PID: 4812</span>
+          </div>
+          <span>v1.0.4-stable</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!-- OFFCANVAS MENU -->
   <div class="offcanvas offcanvas-start bg-os-header-light border-end border-os" tabindex="-1" id="sidebarOffcanvas"
     aria-labelledby="sidebarOffcanvasLabel">
@@ -612,7 +726,8 @@
             Communication
           </h4>
           <nav class="nav flex-column gap-1">
-            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+            <a id="send-messages" class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
               href="#send-messages">
               <i class="fa-regular fa-envelope"></i> Send messages
             </a>
