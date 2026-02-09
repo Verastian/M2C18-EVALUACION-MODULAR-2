@@ -21,7 +21,7 @@
   <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column overflow-hidden vh-100 font-mono">
+<body class="d-flex flex-column overflow-hidden vh-100">
   <div class="flex-fill d-flex flex-column p-2 p-md-4 overflow-hidden">
     <div class="flex-fill d-flex flex-column bg-card-dark border border-os rounded shadow-lg overflow-hidden">
       <!-- HEADER -->
@@ -32,11 +32,10 @@
           <div class="rounded-circle circle-size bg-primary" style="width: 0.75rem; height: 0.75rem"></div>
           <div class="rounded-circle circle-size bg-accent-green" style="width: 0.75rem; height: 0.75rem"></div>
         </div>
-        <div class="text-muted font-mono d-flex align-items-center gap-2 text-item">
-          <span class="text-item-lg">
-            <i class="fa-regular fa-folder-open"></i>
+        <div class="text-body-secondary font-mono d-flex align-items-center gap-2 text-item">
+          <span class="text-body-emphasis"> <i class="fa-regular fa-folder-open"></i>
           </span>
-          <span class="d-none d-md-inline">arivera / home / developer_cv</span>
+          <span class="d-none d-md-inline">verastian / home / developer_cv / full-stack / javascript</span>
         </div>
         <div style="width: 48px"></div>
       </div>
@@ -44,10 +43,10 @@
       <div
         class="bg-os-header-light px-4 py-2 d-flex align-items-center gap-4 border-bottom border-os flex-shrink-0 overflow-auto">
         <div class="d-flex gap-2 flex-shrink-0">
-          <span class="text-muted cursor-not-allowed">
+          <span class="text-body-secondary cursor-not-allowed">
             <i class="fa-solid fa-arrow-left"></i>
           </span>
-          <span class="text-muted cursor-not-allowed">
+          <span class="text-body-secondary cursor-not-allowed">
             <i class="fa-solid fa-arrow-right"></i>
           </span>
         </div>
@@ -65,6 +64,10 @@
           </span>
           <span class="text-light-emphasis">
             <i class="fa-solid fa-border-all"></i>
+          </span>
+          <span id="btn-theme" class="text-light-emphasis" style="cursor: pointer;">
+            <i id="theme-icon-moon" class="fa-regular fa-moon"></i>
+            <i id="theme-icon-sun" class="fa-regular fa-sun d-none"></i>
           </span>
           <button class="btn btn-sm text-light d-md-none ms-2 p-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#sidebarOffcanvas">
@@ -155,7 +158,8 @@
                 <img alt="User profile" class="w-100 h-100 object-fit-cover rounded shadow-sm"
                   src="assets/imgs/working_hard.png" />
               </div>
-              <div class="position-absolute os-badge-corner bg-accent-green px-2 py-1 rounded fw-bold text-black border border-dark">
+              <div id="status-badge"
+                class="position-absolute os-badge-corner bg-accent-green px-2 py-1 rounded fw-bold text-black border border-dark">
                 ONLINE
               </div>
             </div>
@@ -165,7 +169,7 @@
                 root@system: Full Stack JavaScript Developer
               </p>
 
-              <div class="row g-2 text-light-emphasis font-mono text-item-md">
+              <div class="row g-2 text-light-emphasis text-item-md">
                 <div class="col-12 col-sm-6">
                   <span class="text-secondary">Location:</span> Santiago,
                   Chile
@@ -449,7 +453,7 @@
                   <p class="text-light-emphasis mb-2 text-item-lg">
                     UE-CAMP - Programa Talento Digital • 2021
                   </p>
-                  <div class="font-mono text-primary text-item">
+                  <div class=text-primary text-item">
                     [Specialization]: Java &amp; Springboot
                   </div>
                 </div>
@@ -467,7 +471,7 @@
                   <p class="text-light-emphasis mb-2 text-item-lg">
                     E-CAMP - Programa Talento Digital • 2020
                   </p>
-                  <div class="font-mono text-primary text-item">
+                  <div class=text-primary text-item">
                     [Specialization]: Html-Css-JavaScript &amp; Vuejs
                   </div>
                 </div>
@@ -485,7 +489,7 @@
                   <p class="text-light-emphasis mb-2 text-item-lg">
                     INACAP • 2019
                   </p>
-                  <div class="font-mono text-primary text-item">
+                  <div class=text-primary text-item">
                     [Specialization]: fundamentos de programacion &amp; desarrollo de software
                   </div>
                 </div>
@@ -503,7 +507,7 @@
                   <p class="text-light-emphasis mb-2 text-item-lg">
                     INACAP • 2015-2017
                   </p>
-                  <div class="font-mono text-primary text-item">
+                  <div class=text-primary text-item">
                     [Specialization]: Programación en C &amp; Programación de PLC's
                   </div>
                 </div>
@@ -531,7 +535,7 @@
                   <p class="text-light-emphasis mb-2 text-item-lg">
                     Google Developer Group • 2022
                   </p>
-                  <div class="font-mono text-primary text-item">
+                  <div class=text-primary text-item">
                     [Specialization]: Google Cloud Platform - Cloud Developer
                   </div>
                 </div>
@@ -550,8 +554,8 @@
                 <span>CPU: 0.5%</span>
                 <span>RAM: 128MB</span>
               </div>
-              <div class="font-mono">
-                <span class="text-accent-blue">const</span> site = () =&gt;
+              <div class=">
+                <span class=" text-accent-blue">const</span> site = () =&gt;
                 <span class="text-accent-green">"Build with 100% Efficiency"</span>;
               </div>
             </div>
@@ -560,64 +564,66 @@
       </div>
 
       <!-- BAR STATUS -->
-       <div class="bg-os-header text-item px-4 py-2 d-flex align-items-center justify-content-between border-top border-os flex-shrink-0 text-uppercase text-muted">
-                <div>3 items selected (8.2 KB)</div>
-                <div class="d-flex gap-3 gap-md-4 flex-wrap">
-                    <span>UTF-8</span>
-                    <span class="d-none d-sm-inline">Ln 124, Col 32</span>
-                    <span class="text-primary">100% zoom</span>
-                </div>
-            </div>
+      <div
+        class="text-body-secondary bg-os-header text-item px-4 py-2 d-flex align-items-center justify-content-between border-top border-os flex-shrink-0 text-uppercase">
+        <div class="text-body-emphasis">3 items selected (8.2 KB)</div>
+        <div class="d-flex gap-3 gap-md-4 flex-wrap text-body-emphasis">
+          <span>UTF-8</span>
+          <span class="d-none d-sm-inline">Ln 124, Col 32</span>
+          <span class="text-primary">100% zoom</span>
+        </div>
+      </div>
     </div>
   </div>
   <!-- TRASKBAR -->
-<div class="bg-black bg-opacity-50 border-top border-os d-flex align-items-center justify-content-between px-3 px-md-4 flex-shrink-0"
-        style="height: 3.5rem; backdrop-filter: blur(12px); z-index: 1050">
-        <div class="d-flex align-items-center gap-3 gap-md-4">
-            <button class="btn bg-primary d-flex align-items-center justify-content-center p-0 border-0 taskbar-btn">
-                <span class=" text-black fw-bold">
-                    <i class="fa-solid fa-list"></i>
-                </span>
-            </button>
-            <div class="bg-os border-0" style="width: 1px; height: 1.5rem"></div>
-            <div class="d-flex gap-2">
-                <div class="border border-os rounded d-flex align-items-center justify-content-center position-relative taskbar-btn">
-                    <span class="text-light-emphasis">
-                        <i class="fa-solid fa-terminal"></i>
-                    </span>
-                    <div class="position-absolute bg-accent-blue rounded-circle"
-                        style="width: 0.25rem; height: 0.25rem; bottom: 0.25rem"></div>
-                </div>
-                <div class="border border-os rounded d-flex align-items-center justify-content-center position-relative taskbar-btn">
-                    <span class=" text-primary">
-                        <i class="fa-regular fa-folder"></i></span>
-                    <div class="position-absolute bg-accent-blue rounded-circle"
-                        style="width: 0.25rem; height: 0.25rem; bottom: 0.25rem"></div>
-                </div>
-                <div class="border border-os rounded d-flex align-items-center justify-content-center taskbar-btn">
-                    <span class="text-light-emphasis">
-                        <i class="fa-solid fa-gear"></i>
-                    </span>
-                </div>
-            </div>
+  <div
+    class="bg-black bg-opacity-50 border-top border-os d-flex align-items-center justify-content-between px-3 px-md-4 flex-shrink-0"
+    style="height: 3.5rem; backdrop-filter: blur(12px); z-index: 1050">
+    <div class="d-flex align-items-center gap-3 gap-md-4 text-body-secondary">
+      <button class="btn bg-primary d-flex align-items-center justify-content-center p-0 border-0 taskbar-btn">
+        <span class=" text-black fw-bold">
+          <i class="fa-solid fa-list"></i>
+        </span>
+      </button>
+      <div class="bg-os border-0" style="width: 1px; height: 1.5rem"></div>
+      <div class="d-flex gap-2">
+        <div
+          class="border border-os rounded d-flex align-items-center justify-content-center position-relative taskbar-btn">
+          <span class="text-body-emphasis">
+            <i class="fa-solid fa-terminal"></i>
+          </span>
+          <div class="position-absolute bg-accent-blue rounded-circle"></div>
         </div>
-        <div class="d-flex align-items-center gap-3 gap-md-4 text-light-emphasis" style="font-size: 0.75rem">
-            <div class="d-flex gap-2">
-                <span class="">
-                    <i class="fa-solid fa-wifi"></i>
-                </span>
-                <span class="">
-                    <i class="fa-solid fa-battery-full"></i>
-                </span>
-            </div>
-            <div class="text-end lh-sm d-none d-sm-block">
-                <div id="clock" class="fw-medium">12:00 PM</div>
-                <div class="text-secondary" style="font-size: 0.5625rem">
-                    2024-05-24
-                </div>
-            </div>
+        <div
+          class="border border-os rounded d-flex align-items-center justify-content-center position-relative taskbar-btn">
+          <span class="text-primary text-body-emphasis">
+            <i class="fa-regular fa-folder"></i></span>
+          <div class="position-absolute bg-accent-blue rounded-circle"></div>
         </div>
+        <div class="border border-os rounded d-flex align-items-center justify-content-center taskbar-btn">
+          <span class="text-body-emphasis">
+            <i class="fa-solid fa-gear"></i>
+          </span>
+        </div>
+      </div>
     </div>
+    <div class="d-flex align-items-center gap-3 gap-md-4 text-item-md">
+      <div class="d-flex gap-2 text-body-secondary">
+        <span class="text-body-emphasis ">
+          <i class="fa-solid fa-wifi"></i>
+        </span>
+        <span class="text-body-emphasis ">
+          <i class="fa-solid fa-battery-full"></i>
+        </span>
+      </div>
+      <div class="text-body-secondary text-end lh-sm d-none d-sm-block">
+        <div id="clock" class="fw-medium text-body-emphasis">12:00 PM</div>
+        <div class="text-body-emphasis opacity-75 text-item-xs">
+          2024-05-24
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- MODAL -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -631,64 +637,69 @@
             <div class="rounded-circle circle-size bg-primary" style="width: 0.75rem; height: 0.75rem"></div>
             <div class="rounded-circle circle-size bg-accent-green" style="width: 0.75rem; height: 0.75rem"></div>
           </div>
-          <div class="position-absolute start-50 translate-middle-x font-mono text-muted text-uppercase text-item">
+          <div class="position-absolute start-50 translate-middle-x text-muted text-uppercase text-item">
             contact_form.exe
           </div>
-          <button type="button" class="btn-close btn-close-white text-item" data-bs-dismiss="modal" aria-label="Close"
-            ></button>
+          <button type="button" class="btn-close btn-close-white text-item" data-bs-dismiss="modal"
+            aria-label="Close"></button>
         </div>
 
         <!-- Modal Body -->
-        <div class="modal-body p-4 font-mono overflow-auto text-item-lg form-max">
+        <div class="modal-body p-4 overflow-auto text-item-lg form-max">
 
           <!-- Terminal Header Info -->
           <div class="d-flex flex-column gap-1 mb-4">
             <div class="text-muted text-item-md">
               Last login: Fri May 24 14:32:01 on ttys001
             </div>
-            <div class="text-accent-green fw-bold text-item-md" >
+            <div class="text-accent-green fw-bold text-item-md">
               Initializing communication protocol...
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!--CONTACT FORM -->
           <form id="contactForm" class="d-flex flex-column gap-4">
 
             <!-- Name Input -->
             <div class="d-flex flex-column gap-1">
-              <label class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
+              <label for="inputName" class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
                 <span class="text-accent-green">guest@system</span>:<span class="text-accent-blue">~</span>$
                 <span class="text-white">./set_name</span>
               </label>
               <div class="d-flex align-items-center gap-2">
                 <span class="text-primary flex-shrink-0">&gt;</span>
-                <input type="text" class=" terminal-input input-reset flex-fill" placeholder="Enter your identifier..."
-                  autocomplete="off" required>
+                <input type="text" name="inputName" id="inputName" class=" terminal-input input-reset flex-fill"
+                  placeholder="Enter your identifier..." autocomplete="off">
               </div>
+              <span id="error-name" class="error-messages d-none text-item-md"></span>
             </div>
 
             <!-- Email Input -->
             <div class="d-flex flex-column gap-1">
-              <label class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
+              <label for="inputEmail" class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
                 <span class="text-accent-green">guest@system</span>:<span class="text-accent-blue">~</span>$
                 <span class="text-white">./set_email</span>
               </label>
               <div class="d-flex align-items-center gap-2">
                 <span class="text-primary flex-shrink-0">&gt;</span>
-                <input type="email" class=" terminal-input input-reset flex-fill" placeholder="user@domain.root" autocomplete="off"
-                  required>
+                <input type="email" name="inputEmail" id="inputEmail" class=" terminal-input input-reset flex-fill"
+                  placeholder="user@domain.root" autocomplete="off">
               </div>
+              <span id="error-email" class="error-messages d-none text-item-md"></span>
             </div>
 
             <!-- Message Textarea -->
             <div class="d-flex flex-column gap-1">
-              <label class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
+              <label id="inputMessage" class="text-light-emphasis d-flex align-items-center gap-1 flex-wrap">
                 <span class="text-accent-green">guest@system</span>:<span class="text-accent-blue">~</span>$
                 <span class="text-white">./write_message</span>
               </label>
               <div class="bg-black border border-os rounded p-3 mt-2">
-                <textarea class=" terminal-textarea input-reset w-100 font-mono text-item-md" placeholder="System message..." rows="5"></textarea>
+                <textarea name="inputMessage" id="inputMessage"
+                  class=" terminal-textarea input-reset w-100 text-item-md" placeholder="System message..."
+                  rows="5"></textarea>
               </div>
+              <span id="error-message" class="error-messages d-none text-item-md "></span>
             </div>
 
             <!-- Submit Button and Status -->
@@ -696,7 +707,7 @@
               <div class="d-flex gap-3">
                 <button type="button"
                   class="btn cancel-btn flex-fill border border-danger text-danger fw-bold py-3 text-uppercase "
-                  data-bs-dismiss="modal" >
+                  data-bs-dismiss="modal">
                   [ CANCEL ]
                 </button>
                 <button type="submit"
@@ -732,7 +743,7 @@
   <div class="offcanvas offcanvas-start bg-os-header-light border-end border-os" tabindex="-1" id="sidebarOffcanvas"
     aria-labelledby="sidebarOffcanvasLabel">
     <div class="offcanvas-header border-bottom border-os">
-      <h5 class="offcanvas-title text-muted font-mono text-item-lg" id="sidebarOffcanvasLabel">
+      <h5 class="offcanvas-title text-muted text-item-lg" id="sidebarOffcanvasLabel">
         <i class="fa-regular fa-folder-open me-2"></i>Navigation
       </h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -740,7 +751,7 @@
     <div class="offcanvas-body p-0">
       <div class="p-4">
         <div class="mb-5">
-          <h4 class="text-uppercase text-muted mb-4 px-2 text-item text-item-md" >
+          <h4 class="text-uppercase text-muted mb-4 px-2 text-item text-item-md">
             Favorites
           </h4>
           <nav class="nav flex-column gap-1">
@@ -765,13 +776,13 @@
               <i class="fa-solid fa-graduation-cap"></i> Other-kwnoledge
             </a>
           </nav>
-          <h4 class="text-uppercase text-muted mb-4 px-2 text-item mt-4 text-item-md" >
+          <h4 class="text-uppercase text-muted mb-4 px-2 text-item mt-4 text-item-md">
             Communication
           </h4>
           <nav class="nav flex-column gap-1">
-            <a id="send-messages" class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-              href="#send-messages">
+            <a id="send-messages"
+              class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#send-messages">
               <i class="fa-regular fa-envelope"></i> Send messages
             </a>
           </nav>
@@ -779,12 +790,18 @@
       </div>
     </div>
   </div>
+  <!-- ALERT -->
+  <div id="container-alert" class="alert d-none alert-primary alert-dismissible fade show alert-floating" role="alert">
+    <span id="message-alert">A simple primary alert—check it out!</span>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
   <!-- Custom JS -->
-  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

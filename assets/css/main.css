@@ -36,7 +36,11 @@
     --level-opacity: var(--level-5);
   }
 }
-
+[data-bs-theme="light"] {
+ --background-dark: #fff;
+   --os-header: #7c7b7b;
+  --os-border: #333333;
+}
 body {
   background-color: var(--background-dark);
   color: #cbd5e1;
@@ -305,4 +309,33 @@ body {
 }
 .taskbar-btn:hover {
   background-color: var(--background-dark);
+}
+
+/* Alert Floating */
+.alert-floating {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1055; /* más alto que navbar y modales comunes */
+  min-width: 300px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 255, 127, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0);
+  }
+}
+.pulse-active {
+  animation: pulse-green 1.5s infinite;
+  border-color: rgba(0, 255, 127, 1) !important;
 }
