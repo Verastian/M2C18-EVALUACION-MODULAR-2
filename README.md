@@ -43,7 +43,7 @@ El objetivo principal es demostrar el dominio de **HTML, CSS, Bootstrap, JavaScr
 ## 🚀 Demo en Vivo
 
 👉 **Ver CV Interactivo:**  
-[Enlace al CV en GitHub Pages](https://tverastien.github.io/M2C18-EVALUACION-MODULAR-2
+[Enlace al CV en GitHub Pages](https://verastien.github.io/M2C18-EVALUACION-MODULAR-2
 )
 
 > ⚠️ Reemplaza el enlace con la URL real de tu proyecto una vez desplegado.
