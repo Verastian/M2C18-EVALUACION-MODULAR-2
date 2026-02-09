@@ -65,8 +65,17 @@ body {
   cursor: pointer;
 }
 /* TEXT COLOR */
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-secondary {
+  color: #64748b !important;
+}
 .text-accent-blue {
   color: var(--accent-blue) ;
+}
+.text-accent-green {
+  color: var(--accent-green) !important;
 }
 /* Border */
 .border-os {
@@ -117,4 +126,10 @@ body {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
+}
+
+/* PPROFILE */
+.img-xs{
+    width: 8rem;
+    height: 8rem;
 }
