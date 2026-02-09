@@ -1,59 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OS Explorer - Sebastian Vera CV</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Custom CSS (minimal) -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-  </head>
-  <body class="d-flex flex-column overflow-x-hidden vh-100 font-mono">
-    <div
-      class="flex-fill d-flex flex-column bg-card-dark border border-os rounded shadow-lg overflow-hidden"
-    >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OS Explorer - Sebastian Vera CV</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS (minimal) -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column overflow-hidden vh-100 font-mono">
+  <div class="flex-fill d-flex flex-column p-2 p-md-4 overflow-hidden">
+    <div class="flex-fill d-flex flex-column bg-card-dark border border-os rounded shadow-lg overflow-hidden">
       <!-- HEADER -->
       <div
-        class="bg-os-header px-4 py-2 d-flex align-items-center justify-content-between border-bottom border-os flex-shrink-0"
-      >
+        class="bg-os-header px-4 py-2 d-flex align-items-center justify-content-between border-bottom border-os flex-shrink-0">
         <div class="d-flex gap-2">
-          <div
-            class="rounded-circle circle-size bg-accent-red"
-            style="width: 0.75rem; height: 0.75rem"
-          ></div>
-          <div
-            class="rounded-circle circle-size bg-primary"
-            style="width: 0.75rem; height: 0.75rem"
-          ></div>
-          <div
-            class="rounded-circle circle-size bg-accent-green"
-            style="width: 0.75rem; height: 0.75rem"
-          ></div>
+          <div class="rounded-circle circle-size bg-accent-red" style="width: 0.75rem; height: 0.75rem"></div>
+          <div class="rounded-circle circle-size bg-primary" style="width: 0.75rem; height: 0.75rem"></div>
+          <div class="rounded-circle circle-size bg-accent-green" style="width: 0.75rem; height: 0.75rem"></div>
         </div>
-        <div
-          class="text-muted font-mono d-flex align-items-center gap-2"
-          style="font-size: 0.625rem"
-        >
+        <div class="text-muted font-mono d-flex align-items-center gap-2" style="font-size: 0.625rem">
           <span style="font-size: 0.8rem">
             <i class="fa-regular fa-folder-open"></i>
           </span>
@@ -63,8 +42,7 @@
       </div>
       <!-- NAV -->
       <div
-        class="bg-os-header-light px-4 py-2 d-flex align-items-center gap-4 border-bottom border-os flex-shrink-0 overflow-auto"
-      >
+        class="bg-os-header-light px-4 py-2 d-flex align-items-center gap-4 border-bottom border-os flex-shrink-0 overflow-auto">
         <div class="d-flex gap-2 flex-shrink-0">
           <span class="text-muted" style="cursor: not-allowed">
             <i class="fa-solid fa-arrow-left"></i>
@@ -73,10 +51,8 @@
             <i class="fa-solid fa-arrow-right"></i>
           </span>
         </div>
-        <div
-          class="flex-fill bg-black bg-opacity-25 rounded border border-os px-3 py-1 d-flex align-items-center gap-2"
-          style="font-size: 0.6875rem; min-width: 200px"
-        >
+        <div class="flex-fill bg-black bg-opacity-25 rounded border border-os px-3 py-1 d-flex align-items-center gap-2"
+          style="font-size: 0.6875rem; min-width: 200px">
           <span class="text-secondary">C:</span>
           <span class="text-muted">/</span>
           <span class="text-muted fw-bold">root</span>
@@ -90,12 +66,8 @@
           <span class="text-light-emphasis">
             <i class="fa-solid fa-border-all"></i>
           </span>
-          <button
-            class="btn btn-sm text-light d-md-none ms-2 p-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#sidebarOffcanvas"
-          >
+          <button class="btn btn-sm text-light d-md-none ms-2 p-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarOffcanvas">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
@@ -103,56 +75,44 @@
 
       <div class="d-flex flex-fill overflow-x-hidden">
         <!-- SIDEBAR -->
-        <aside
-          class="sidebar border-end border-os bg-os-header-light overflow-auto d-none d-md-block"
-        >
+        <aside class="sidebar border-end border-os bg-os-header-light overflow-auto d-none d-md-block">
           <div class="p-4">
             <div class="mb-5">
               <h4 class="text-uppercase text-muted mb-4 px-2 text-item">
                 Favorites
               </h4>
               <nav class="nav flex-column gap-1">
-                <a
-                  class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-primary active"
-                  href="#profile"
-                >
+                <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-primary active"
+                  href="#profile">
                   <span class="text-md-icon">
                     <i class="fa-regular fa-circle-user"></i>
                   </span>
                   <span>Profile</span>
                 </a>
-                <a
-                  class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                  href="#experience"
-                >
+                <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+                  href="#experience">
                   <span class="text-md-icon">
                     <i class="fa-solid fa-briefcase"></i>
                   </span>
                   <span>Experience</span>
                 </a>
-                <a
-                  class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                  href="#skills"
-                >
+                <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+                  href="#skills">
                   <span class="text-md-icon">
                     <i class="fa-regular fa-file-code"></i>
                   </span>
                   <span>Skills</span>
                 </a>
 
-                <a
-                  class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                  href="#education"
-                >
+                <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+                  href="#education">
                   <span class="text-md-icon">
                     <i class="fa-solid fa-graduation-cap"></i>
                   </span>
                   <span>Education</span>
                 </a>
-                <a
-                  class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                  href="#other_know"
-                >
+                <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+                  href="#other_know">
                   <span class="text-md-icon">
                     <i class="fa-solid fa-graduation-cap"></i>
                   </span>
@@ -164,10 +124,8 @@
               <h4 class="text-item text-uppercase text-muted mb-4 px-2">
                 communication
               </h4>
-              <div
-                id="send-messages"
-                class="item-link d-flex text-custom-sm align-items-center gap-2 px-2 py-2 rounded text-light"
-              >
+              <div id="send-messages"
+                class="item-link d-flex text-custom-sm align-items-center gap-2 px-2 py-2 rounded text-light">
                 <span class="text-accent-blue text-md-icon">
                   <i class="fa-solid fa-envelope"></i>
                 </span>
@@ -178,9 +136,7 @@
               <h4 class="text-item text-uppercase text-muted mb-4 px-2">
                 Devices
               </h4>
-              <div
-                class="d-flex text-custom-sm align-items-center gap-2 px-2 py-1 text-light-emphasis"
-              >
+              <div class="d-flex text-custom-sm align-items-center gap-2 px-2 py-1 text-light-emphasis">
                 <span class="text-accent-blue text-md-icon">
                   <i class="fa-solid fa-database"></i>
                 </span>
@@ -189,103 +145,494 @@
             </div>
           </div>
         </aside>
+        <!-- CONTENT -->
+        <main class="flex-fill overflow-auto p-4 p-md-5 custom-scrollbar">
+          <!-- PROFILE HEAD -->
+          <div id="profile" class="mb-5 d-flex flex-column flex-md-row gap-4 align-items-start">
+            <div class="flex-shrink-0 position-relative">
+              <div class="border border-2 border-os rounded overflow-hidden bg-black p-1"
+                style="width: 8rem; height: 8rem">
+                <img alt="User profile" class="w-100 h-100 object-fit-cover rounded shadow-sm"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCna-4lXz07O6L8B5B1lva0mgnAz8vyGTnHAKqyllitTnKAF6HuQlv3Hp93uM-3ZWo2lUYJ-QivUctlOhichpLkL2GCqypWj7oh3MLJaqjdcs9FzBM9Igvh6LVaNlGfO_HJRKzseWjNRnYlgHQ1yni5dd-e1wZXE2aEYfTiNWVDbcm73g7RHE5L1zadbukUrAoCHfQmk1hTNdB8DrA22cB-ebOE7WLamNVi0L1LKCPKueVSXL8-Ymokx4XzzLOPG2LnRyGPiCoK7lta" />
+              </div>
+              <div class="position-absolute bg-accent-green px-2 py-1 rounded fw-bold text-black border border-dark"
+                style="bottom: -0.5rem; right: -0.5rem; font-size: 0.625rem">
+                ONLINE
+              </div>
+            </div>
+            <div class="flex-fill">
+              <h1 class="h2 fw-bold text-white mb-1">sebastian_vera.user</h1>
+              <p class="text-primary fw-bold mb-4">
+                root@system: Full Stack JavaScript Developer
+              </p>
+  
+              <div class="row g-2 text-light-emphasis font-mono" style="font-size: 0.75rem">
+                <div class="col-12 col-sm-6">
+                  <span class="text-secondary">Location:</span> Santiago,
+                  Chile
+                </div>
+                <div class="col-12 col-sm-6">
+                  <span class="text-secondary">Email:</span>
+                  verastian0908@gmail.com
+                </div>
+                <div class="col-12 col-sm-6">
+                  <span class="text-secondary">Website:</span>
+                  verastian.website
+                </div>
+                <div class="col-12 col-sm-6">
+                  <span class="text-secondary">GitHub:</span>
+                  github.com/Verastian
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- EXPERIENCE -->
+          <section id="experience" class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <span class="text-primary" style="font-size: 1.5rem">
+                <i class="fa-regular fa-folder"></i>
+              </span>
+              <h2 class="h5 fw-bold text-white mb-0">/experience</h2>
+              <div class="flex-fill border-bottom border-dashed border-os ms-2"></div>
+            </div>
+  
+            <div class="border-start border-os ms-3 ps-3">
+  
+              <div class="file-item p-4 border border-os bg-black  rounded mb-4"
+                style="transition: background-color 0.15s ease-in-out">
+                <div class="d-flex align-items-start gap-4">
+  
+                  <span class="text-accent-green mt-1">
+                    <i class="fa-solid fa-terminal"></i>
+                  </span>
+                  <div class="flex-fill">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2 mb-2">
+                      <div>
+                        <h3 class="h6 text-white fw-bold mb-1">
+                          fullstack_dev.md
+                        </h3>
+                        <p class="text-primary mb-0" style="font-size: 0.6875rem">
+                          ZOFTCOM • Mar 2023 — Dec 2024
+                        </p>
+                      </div>
+                      <span class="badge bg-white bg-opacity-5 text-muted" style="font-size: 0.625rem">archived</span>
+                    </div>
+                    <ul class="list-unstyled text-light-emphasis mb-0" style="font-size: 0.6875rem">
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>Desarrollo de plataforma de geolocalización para pymes.</span>
+                      </li>
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>Definición de stack JS/TS para frontend y backend.</span>
+                      </li>
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>Integración Google Maps y diseño de base de datos.</span>
+                      </li>
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>Sistema de gestión de dispositivos para instituciones
+                          educacionales.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="file-item p-4 border border-os bg-black  rounded"
+                style="transition: background-color 0.15s ease-in-out">
+                <div class="d-flex align-items-start gap-4">
+                  <span class="text-muted mt-1">
+                    <i class="fa-solid fa-terminal"></i>
+                  </span>
+                  <div class="flex-fill">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2 mb-2">
+                      <div>
+                        <h3 class="h6 text-white fw-bold mb-1">
+                          backend_node_jr.md
+                        </h3>
+                        <p class="text-primary mb-0" style="font-size: 0.6875rem">
+                          DLAB • Mar 2022 — Mar 2023
+                        </p>
+                      </div>
+                      <span class="badge bg-white bg-opacity-5 text-muted" style="font-size: 0.625rem">archived</span>
+                    </div>
+                    <ul class="list-unstyled text-light-emphasis mb-0" style="font-size: 0.6875rem">
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>desarrollo de API REST con Node.js y PostgreSQL.</span>
+                      </li>
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>Autenticación segura y CRUD bajo patrón MVC.</span>
+                      </li>
+                      <li class="d-flex gap-2 mb-2">
+                        <span class="text-primary flex-shrink-0">&gt;</span>
+                        <span>Trabajo bajo Scrum: épicas, historias y backlogs.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- SSKILLS -->
+          <section id="skills" class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <span class="text-primary" style="font-size: 1.5rem">
+                <i class="fa-regular fa-folder"></i>
+              </span>
+              <h2 class="h5 fw-bold text-white mb-0">/skills</h2>
+              <div class="flex-fill border-bottom border-dashed border-os ms-2"></div>
+            </div>
+            <div class="border-start border-os ms-3 ps-3 row g-4">
+              <!-- FrontEnd -->
+              <div class="col-12 col-md-6 my-5">
+                <div class="p-3 border border-os bg-black  rounded d-flex align-items-center gap-3 h-100">
+                  <span class="text-accent-green flex-shrink-0">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </span>
+                  <div class="flex-fill">
+                    <h4 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.625rem; letter-spacing: 0.1em">
+                      Frontend_Stack
+                    </h4>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge border rounded  badge-green  level-5"">React.js</span>
+                                              <span class=" badge border rounded badge-green level-3">TypeScript</span>
+                      <span class="badge border rounded  badge-green  level-5">Bootstrap</span>
+                      <span class="badge border rounded  badge-green  level-5">Next.js</span>
+                      <span class="badge border rounded  badge-green  level-4">Css/Sass</span>
+                      <span class="badge border rounded  badge-green  level-5">Tailwind</span>
+                      <span class="badge border rounded  badge-green  level-2">Vue.js</span>
+                      <span class="badge border rounded  badge-green  level-5">Html5</span>
+                      <span class="badge border rounded  badge-green  level-4">GSAP</span>
+                      <span class="badge border rounded  badge-green  level-4">Threejs</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="expertise-scale mt-3">
+                  <span class="expertise-label">1</span>
+                  <div class="expertise-squares">
+                    <span class="square badge-green  level-1"></span>
+                    <span class="square badge-green  level-2"></span>
+                    <span class="square badge-green  level-3"></span>
+                    <span class="square badge-green  level-4"></span>
+                    <span class="square badge-green  level-5"></span>
+                  </div>
+                  <span class="expertise-label">5</span>
+                </div>
+  
+              </div>
+              <!-- Backend -->
+              <div class="col-12 col-md-6 my-5">
+                <div class="p-3 border border-os bg-black  rounded d-flex align-items-center gap-3 h-100">
+                  <span class="text-accent-blue flex-shrink-0">
+                    <i class="fa-brands fa-node-js"></i>
+                  </span>
+                  <div class="flex-fill">
+                    <h4 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.625rem; letter-spacing: 0.1em">
+                      Backend_stack
+                    </h4>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge border rounded  badge-blue  level-5"">Node.js</span>
+                                              <span class=" badge border rounded badge-blue level-2">Java</span>
+                      <span class="badge border rounded  badge-blue  level-5">Nest.js</span>
+                      <span class="badge border rounded  badge-blue  level-2">Spring Boot</span>
+                      <span class="badge border rounded  badge-blue  level-2">PHP</span>
+                      <span class="badge border rounded  badge-blue  level-5">Express.js</span>
+                      <span class="badge border rounded  badge-blue  level-4">Sequelize</span>
+                      <span class="badge border rounded  badge-blue  level-5">Prisma</span>
+                      <span class="badge border rounded  badge-blue  level-3">TypeORM</span>
+                      <span class="badge border rounded  badge-blue  level-4">Zustand</span>
+                      <span class="badge border rounded  badge-blue  level-5">API Rest</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="expertise-scale mt-3">
+                  <span class="expertise-label">1</span>
+                  <div class="expertise-squares">
+                    <span class="square badge-blue  level-1"></span>
+                    <span class="square badge-blue  level-2"></span>
+                    <span class="square badge-blue  level-3"></span>
+                    <span class="square badge-blue  level-4"></span>
+                    <span class="square badge-blue  level-5"></span>
+                  </div>
+                  <span class="expertise-label">5</span>
+                </div>
+              </div>
+              <!-- Databases -->
+              <div class="col-12 col-md-6 my-5">
+                <div class="p-3 border border-os bg-black  rounded d-flex align-items-center gap-3 h-100">
+                  <span class="text-accent-orange flex-shrink-0">
+                    <i class="fa-solid fa-server"></i>
+                  </span>
+                  <div class="flex-fill">
+                    <h4 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.625rem; letter-spacing: 0.1em">
+                      Database_stack
+                    </h4>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge border rounded  badge-orange  level-5"">MySQL</span>
+                                              <span class=" badge border rounded badge-orange level-2">MongDB</span>
+                      <span class="badge border rounded  badge-orange  level-5">PostgreSQL</span>
+                      <span class="badge border rounded  badge-orange  level-2">SQL Server</span>
+                      <span class="badge border rounded  badge-orange  level-2">NEON</span>
+                      <span class="badge border rounded  badge-orange  level-5">AirTable</span>
+                      <span class="badge border rounded  badge-orange  level-4">Google Sheet</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="expertise-scale mt-3">
+                  <span class="expertise-label">1</span>
+                  <div class="expertise-squares">
+                    <span class="square badge-orange  level-1"></span>
+                    <span class="square badge-orange  level-2"></span>
+                    <span class="square badge-orange  level-3"></span>
+                    <span class="square badge-orange  level-4"></span>
+                    <span class="square badge-orange  level-5"></span>
+                  </div>
+                  <span class="expertise-label">5</span>
+                </div>
+              </div>
+              <!-- Tools -->
+              <div class="col-12 col-md-6 my-5">
+                <div class="p-3 border border-os bg-black  rounded d-flex align-items-center gap-3 h-100">
+                  <span class="text-accent-purple flex-shrink-0">
+                    <i class="fa-solid fa-code-fork"></i>
+                  </span>
+                  <div class="flex-fill">
+                    <h4 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.625rem; letter-spacing: 0.1em">
+                      Tools_stack
+                    </h4>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="badge border rounded  badge-purple  level-5"">Visual Studio Code</span>
+                                              <span class=" badge border rounded badge-purple level-2">Eclipse IDE</span>
+                      <span class="badge border rounded  badge-purple  level-4">MySQL Workbench</span>
+                      <span class="badge border rounded  badge-purple  level-2">PGAdmin</span>
+                      <span class="badge border rounded  badge-purple  level-2">MongoDB Compass</span>
+                      <span class="badge border rounded  badge-purple  level-4">SQL Developer</span>
+                      <span class="badge border rounded  badge-purple  level-3">Jira</span>
+                      <span class="badge border rounded  badge-purple  level-4">Docker Desktop</span>
+                      <span class="badge border rounded  badge-purple  level-4">Postman</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="expertise-scale mt-3">
+                  <span class="expertise-label">1</span>
+                  <div class="expertise-squares">
+                    <span class="square badge-purple  level-1"></span>
+                    <span class="square badge-purple  level-2"></span>
+                    <span class="square badge-purple  level-3"></span>
+                    <span class="square badge-purple  level-4"></span>
+                    <span class="square badge-purple  level-5"></span>
+                  </div>
+                  <span class="expertise-label">5</span>
+                </div>
+              </div>
+              <!-- Methodologies -->
+            </div>
+          </section>
+  
+          <!-- EDUCATION  -->
+          <section id="education" class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <span class="text-primary" style="font-size: 1.5rem">
+                <i class="fa-regular fa-folder"></i></span>
+              <h2 class="h5 fw-bold text-white mb-0">/education</h2>
+              <div class="flex-fill border-bottom border-dashed border-os ms-2"></div>
+            </div>
+            <div class="border-start border-os ms-3 ps-3">
+              <div class="file-item p-4 border border-os bg-black  rounded d-flex gap-3"
+                style="transition: background-color 0.15s ease-in-out">
+                <span class=" text-accent-red mt-1 flex-shrink-0">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div class="flex-fill">
+                  <h3 class="h6 text-white fw-bold mb-1">
+                    desarrollador_de_aplicaciones_full_stack_java_trainee
+                  </h3>
+                  <p class="text-light-emphasis mb-2" style="font-size: 0.6875rem">
+                    UE-CAMP - Programa Talento Digital • 2021
+                  </p>
+                  <div class="font-mono text-primary" style="font-size: 0.625rem; opacity: 0.75">
+                    [Specialization]: Java &amp; Springboot
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-start border-os ms-3 ps-3">
+              <div class="file-item p-4 border border-os bg-black  rounded d-flex gap-3"
+                style="transition: background-color 0.15s ease-in-out">
+                <span class=" text-accent-red mt-1 flex-shrink-0">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div class="flex-fill">
+                  <h3 class="h6 text-white fw-bold mb-1">
+                    desarrollador_de_aplicaciones_front_end_trainee
+                  </h3>
+                  <p class="text-light-emphasis mb-2" style="font-size: 0.6875rem">
+                    E-CAMP - Programa Talento Digital • 2020
+                  </p>
+                  <div class="font-mono text-primary" style="font-size: 0.625rem; opacity: 0.75">
+                    [Specialization]: Html-Css-JavaScript &amp; Vuejs
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-start border-os ms-3 ps-3">
+              <div class="file-item p-4 border border-os bg-black  rounded d-flex gap-3"
+                style="transition: background-color 0.15s ease-in-out">
+                <span class=" text-accent-red mt-1 flex-shrink-0">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div class="flex-fill">
+                  <h3 class="h6 text-white fw-bold mb-1">
+                    analista_programador
+                  </h3>
+                  <p class="text-light-emphasis mb-2" style="font-size: 0.6875rem">
+                    INACAP • 2019
+                  </p>
+                  <div class="font-mono text-primary" style="font-size: 0.625rem; opacity: 0.75">
+                    [Specialization]: fundamentos de programacion &amp; desarrollo de software
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-start border-os ms-3 ps-3">
+              <div class="file-item p-4 border border-os bg-black  rounded d-flex gap-3"
+                style="transition: background-color 0.15s ease-in-out">
+                <span class=" text-accent-red mt-1 flex-shrink-0">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div class="flex-fill">
+                  <h3 class="h6 text-white fw-bold mb-1">
+                    técnico_superior_en_electrónica
+                  </h3>
+                  <p class="text-light-emphasis mb-2" style="font-size: 0.6875rem">
+                    INACAP • 2015-2017
+                  </p>
+                  <div class="font-mono text-primary" style="font-size: 0.625rem; opacity: 0.75">
+                    [Specialization]: Programación en C &amp; Programación de PLC's
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- OTHER KNOWLEDGE -->
+          <section id="other_know" class="mb-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <span class="text-primary" style="font-size: 1.5rem">
+                <i class="fa-regular fa-folder"></i>
+              </span>
+              <h2 class="h5 fw-bold text-white mb-0">/other_knowledge </h2>
+              <div class="flex-fill border-bottom border-dashed border-os ms-2"></div>
+            </div>
+            <div class="border-start border-os ms-3 ps-3">
+              <div class="file-item p-4 border border-os bg-black  rounded d-flex gap-3"
+                style="transition: background-color 0.15s ease-in-out">
+                <span class=" text-accent-red mt-1 flex-shrink-0">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </span>
+                <div class="flex-fill">
+                  <h3 class="h6 text-white fw-bold mb-1">
+                    all_cloud_chile_path_cloud_developer
+                  </h3>
+                  <p class="text-light-emphasis mb-2" style="font-size: 0.6875rem">
+                    Google Developer Group • 2022
+                  </p>
+                  <div class="font-mono text-primary" style="font-size: 0.625rem; opacity: 0.75">
+                    [Specialization]: Google Cloud Platform - Cloud Developer
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- FOOTER -->
+          <footer class="mt-5 pt-4 border-top border-os">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary"
+              style="font-size: 0.625rem">
+              <div class="d-flex align-items-center gap-3 flex-wrap">
+                <span class="d-flex align-items-center gap-2">
+                  <span class="rounded-circle bg-accent-green" style="width: 0.5rem; height: 0.5rem"></span>
+                  System Ready
+                </span>
+                <span>CPU: 0.5%</span>
+                <span>RAM: 128MB</span>
+              </div>
+              <div class="font-mono">
+                <span class="text-accent-blue">const</span> site = () =&gt;
+                <span class="text-accent-green">"Build with 100% Efficiency"</span>;
+              </div>
+            </div>
+          </footer>
+        </main>
       </div>
-      <!-- CONTENT -->
-      <main></main>
 
       <!-- BAR STATUS -->
+      <div></div>
     </div>
-
-    <div></div>
-    <!-- TRASKBAR -->
-    <div></div>
-    <!-- OFFCANVAS MENU -->
-    <div
-      class="offcanvas offcanvas-start bg-os-header-light border-end border-os"
-      tabindex="-1"
-      id="sidebarOffcanvas"
-      aria-labelledby="sidebarOffcanvasLabel"
-    >
-      <div class="offcanvas-header border-bottom border-os">
-        <h5
-          class="offcanvas-title text-muted font-mono text-item-lg "
-          id="sidebarOffcanvasLabel"
-        >
-          <i class="fa-regular fa-folder-open me-2 "></i>Navigation
-        </h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body p-0">
-        <div class="p-4">
-          <div class="mb-5">
-            <h4
-              class="text-uppercase text-muted mb-4 px-2 text-item"
-              style="font-size: 0.7rem"
-            >
-              Favorites
-            </h4>
-            <nav class="nav flex-column gap-1">
-              <a
-                class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-primary active"
-                href="#profile"
-              >
-                <i class="fa-regular fa-circle-user"></i> Profile
-              </a>
-              <a
-                class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                href="#experience"
-              >
-                <i class="fa-solid fa-briefcase"></i> Experience
-              </a>
-              <a
-                class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                href="#skills"
-              >
-                    <i class="fa-regular fa-file-code"></i> Skills
-              </a>
-              <a
-                class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                href="#education"
-              >
-                <i class="fa-solid fa-graduation-cap"></i> Education
-              </a>
-              <a
-                class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                href="#other_know"
-              >
-                <i class="fa-solid fa-graduation-cap"></i> Other-kwnoledge
-              </a>
-            </nav>
-            <h4
-              class="text-uppercase text-muted mb-4 px-2 text-item mt-4"
-              style="font-size: 0.7rem"
-            >
-              Communication
-            </h4>
-            <nav class="nav flex-column gap-1">
-              <a
-                class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
-                href="#send-messages"
-              >
-                <i class="fa-regular fa-envelope"></i> Send messages
-              </a>
-            </nav>
-          </div>
+  </div>
+  <!-- TRASKBAR -->
+  <div></div>
+  <!-- OFFCANVAS MENU -->
+  <div class="offcanvas offcanvas-start bg-os-header-light border-end border-os" tabindex="-1" id="sidebarOffcanvas"
+    aria-labelledby="sidebarOffcanvasLabel">
+    <div class="offcanvas-header border-bottom border-os">
+      <h5 class="offcanvas-title text-muted font-mono text-item-lg " id="sidebarOffcanvasLabel">
+        <i class="fa-regular fa-folder-open me-2 "></i>Navigation
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="p-4">
+        <div class="mb-5">
+          <h4 class="text-uppercase text-muted mb-4 px-2 text-item" style="font-size: 0.7rem">
+            Favorites
+          </h4>
+          <nav class="nav flex-column gap-1">
+            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-primary active"
+              href="#profile">
+              <i class="fa-regular fa-circle-user"></i> Profile
+            </a>
+            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+              href="#experience">
+              <i class="fa-solid fa-briefcase"></i> Experience
+            </a>
+            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+              href="#skills">
+              <i class="fa-regular fa-file-code"></i> Skills
+            </a>
+            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+              href="#education">
+              <i class="fa-solid fa-graduation-cap"></i> Education
+            </a>
+            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+              href="#other_know">
+              <i class="fa-solid fa-graduation-cap"></i> Other-kwnoledge
+            </a>
+          </nav>
+          <h4 class="text-uppercase text-muted mb-4 px-2 text-item mt-4" style="font-size: 0.7rem">
+            Communication
+          </h4>
+          <nav class="nav flex-column gap-1">
+            <a class="nav-link text-custom-sm d-flex align-items-center gap-2 px-2 py-2 rounded text-light"
+              href="#send-messages">
+              <i class="fa-regular fa-envelope"></i> Send messages
+            </a>
+          </nav>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom JS -->
-    <script src="assets/js/scripts.js"></script>
-  </body>
+  <!-- Custom JS -->
+  <script src="assets/js/scripts.js"></script>
+</body>
+
 </html>
