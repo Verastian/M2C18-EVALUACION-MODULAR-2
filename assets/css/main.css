@@ -156,10 +156,18 @@ body {
 .cancel-btn:hover {
   background-color: rgba(239, 68, 68, 0.25);
 }
-.terminal-input{
+.input-reset{
   background-color: transparent;
   border: none;
   outline: none;
+}
+.terminal-input{
+  background-color: black;
+  padding: 0.5rem;
+  color:var(--primary);
+}
+.terminal-textarea{
+  background-color: black;
   color:var(--primary);
 }
 .submit-btn {
