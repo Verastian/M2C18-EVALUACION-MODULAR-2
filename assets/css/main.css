@@ -4,6 +4,7 @@
 
        --accent-red: #ef4444;
        --accent-green: #24d89c;
+       --accent-blue: #3b82f6;
        --os-header: #252525;
 
        --card-dark: #1e1e1e;
@@ -36,7 +37,7 @@ body {
   color: rgba(203, 213, 225, 0.75) !important;
 }
 
-/* Backgrounds */
+/* Backgrounds COLORS*/
 .bg-os-header {
   background-color: var(--os-header);
 }
@@ -56,8 +57,40 @@ body {
 .bg-os-header-light {
   background-color: rgba(37, 37, 37, 0.5);
 }
-
+/* NAV LINK */
+.nav-link:hover,.item-link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.item-link {
+  cursor: pointer;
+}
+/* TEXT COLOR */
+.text-accent-blue {
+  color: var(--accent-blue) ;
+}
 /* Border */
 .border-os {
-  border-color: var(--os-border) !important;
+  border-color: var(--os-border) ;
+}
+/* SIDEBAR */
+.sidebar{
+    min-width: 14rem;
+}
+/* Texts */
+.text-custom-sm {
+    font-size: 0.8rem;
+    transition: background-color 0.15s ease-in-out;
+}
+.text-md-icon {
+    font-size: 1.125rem;
+}
+.text-item {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; 
+}
+.text-item-lg {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; 
 }
