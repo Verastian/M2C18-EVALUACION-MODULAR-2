@@ -6,9 +6,35 @@
        --accent-green: #24d89c;
        --accent-blue: #3b82f6;
        --os-header: #252525;
+       --os-border: #333333;
 
        --card-dark: #1e1e1e;
-       
+       /* Varibles Expertice system */
+         --green-base: 16, 185, 129; /* rgb(16,135,95) */
+  --blue-base: 59, 130, 246; /* rgb(51,88,166) */
+  --orange-base: 166, 112, 41; /* rgb(166, 112, 41) */
+  --purple-base: 131, 41, 166;
+  --level-1: 0.15;
+  --level-2: 0.28;
+  --level-3: 0.35;
+  --level-4: 0.5;
+  --level-5: 1;
+
+  .level-1 {
+    --level-opacity: var(--level-1);
+  }
+  .level-2 {
+    --level-opacity: var(--level-2);
+  }
+  .level-3 {
+    --level-opacity: var(--level-3);
+  }
+  .level-4 {
+    --level-opacity: var(--level-4);
+  }
+  .level-5 {
+    --level-opacity: var(--level-5);
+  }
 }
 
 
@@ -38,6 +64,9 @@ body {
 }
 
 /* Backgrounds COLORS*/
+.bg-os {
+  background-color: var(--os-border);
+}
 .bg-os-header {
   background-color: var(--os-header);
 }
@@ -79,7 +108,10 @@ body {
 }
 /* Border */
 .border-os {
-  border-color: var(--os-border) ;
+  border-color: var(--os-border) !important;
+}
+.border-dashed {
+  border-style: dashed !important;
 }
 /* SIDEBAR */
 .sidebar{
@@ -136,4 +168,69 @@ body {
 .img-xs{
     width: 8rem;
     height: 8rem;
+}
+/* SKILLS */
+/* BADGES */
+.badge-size {
+  font-size: 0.625rem;
+  padding: 0.125rem 0.5rem;
+}
+.badge-green {
+  border-color: rgba(
+    var(--green-base),
+    calc(var(--level-opacity) * 0.5)
+  ) !important;
+  background-color: rgba(var(--green-base), calc(var(--level-opacity) * 0.5));
+  color: var(--accent-green);
+}
+.badge-blue {
+  border-color: rgba(
+    var(--blue-base),
+    calc(var(--level-opacity) * 0.5)
+  ) !important;
+  background-color: rgba(var(--blue-base), calc(var(--level-opacity) * 0.5));
+  color: rgb(var(--accent-blue));
+}
+.badge-orange {
+  border-color: rgba(
+    var(--orange-base),
+    calc(var(--level-opacity) * 0.5)
+  ) !important;
+  background-color: rgba(var(--orange-base), calc(var(--level-opacity) * 0.5));
+  color: var(--accent-orange);
+}
+.badge-purple {
+  border-color: rgba(
+    var(--purple-base),
+    calc(var(--level-opacity) * 0.5)
+  ) !important;
+  background-color: rgba(var(--purple-base), calc(var(--level-opacity) * 0.5));
+  color: rgb(var(--accent-purple));
+}
+/* Expertice System */
+
+.expertise-scale {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.625rem;
+  color: var(--bs-secondary);
+}
+
+.expertise-squares {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.square {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Labels */
+.expertise-label {
+  font-family: var(--bs-font-monospace);
+  opacity: 0.75;
 }
