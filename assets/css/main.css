@@ -111,3 +111,10 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #444;
 }
+
+/* FOOTER */
+.circle-xs{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
